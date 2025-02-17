@@ -5,8 +5,8 @@ HardwareSerial gpsSerial(1);  // You can also use 2 if desired
 TinyGPSPlus gps;
 
 // Define the RX and TX pins for UART1 (adjust these to your wiring)
-#define GPS_RX_PIN 16  // Connect L80R TX to ESP32 GPIO16
-#define GPS_TX_PIN 17  // Connect L80R RX to ESP32 GPIO17
+#define GPS_RX_PIN 3 // Connect L80R TX to ESP32 GPIO3
+#define GPS_TX_PIN 1  // Connect L80R RX to ESP32 GPIO1
 
 void setup() {
   // Start the primary Serial for debugging
