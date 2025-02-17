@@ -2,7 +2,7 @@
 #include <SoftwareSerial.h>  // Or use HardwareSerial if pins allow
 
 TinyGPSPlus gps;
-SoftwareSerial gpsSerial(2, TX_PIN); // (RX, TX) for the MCU
+SoftwareSerial gpsSerial(RX_PIN, TX_PIN); // (RX, TX) for the MCU
 
 void setup() {
   Serial.begin(115200);
